@@ -8,5 +8,8 @@ mkcd () {
   cd "$1"
 }
 
+# Sets VSCode as the default editor
+export EDITOR="code"
+
 # Aliases
 alias g="git"
