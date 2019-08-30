@@ -13,3 +13,4 @@ export EDITOR="code --wait"
 
 # Aliases
 alias g="git"
+alias show="cless"
