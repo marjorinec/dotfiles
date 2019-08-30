@@ -9,7 +9,7 @@ mkcd () {
 }
 
 # Sets VSCode as the default editor
-export EDITOR="code"
+export EDITOR="code --wait"
 
 # Aliases
 alias g="git"
