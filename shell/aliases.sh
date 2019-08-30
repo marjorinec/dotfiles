@@ -8,3 +8,5 @@ mkcd () {
   cd "$1"
 }
 
+# Aliases
+alias g="git"
