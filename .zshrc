@@ -95,6 +95,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh
 
+# Exports paths to Projects folder & dotfiles folder
+export PROJECTS_PATH=$HOME/Projetos
+export DOTFILES_PATH=$PROJECTS_PATH/dotfiles
+
 mkcd () {
   mkdir "$1"
   cd "$1"
