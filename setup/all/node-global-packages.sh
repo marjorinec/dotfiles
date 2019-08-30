@@ -7,7 +7,7 @@ npm install -g \
   node-sass \
   gulp-cli \
   webpack-cli \
-  parcel-bundler
+  parcel-bundler \
   bower \
   react-scripts \
   electron \
