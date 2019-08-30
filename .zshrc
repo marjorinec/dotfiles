@@ -6,7 +6,12 @@ export ZSH="/Users/marjorie/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="lambda"
+#ZSH_THEME="lambda"
+#ZSH_THEME="agnoster"
+#ZSH_THEME="sorin"
+
+# starship is loaded w/ an eval
+eval "$(starship init zsh)"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -67,8 +72,8 @@ ZSH_THEME="lambda"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git 
-  git-prompt
+  #git 
+  #git-prompt
   colorize
 
 )
