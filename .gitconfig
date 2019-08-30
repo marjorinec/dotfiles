@@ -2,6 +2,9 @@
 	email = alline.marjorie@gmail.com
 	name = Alline Marjorie
 
+[core]
+	autocrlf = input
+
 [alias]
 	st = status
 	ciam = commit -am
