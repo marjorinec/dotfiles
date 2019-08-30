@@ -99,7 +99,5 @@ source $ZSH/oh-my-zsh.sh
 export PROJECTS_PATH=$HOME/Projetos
 export DOTFILES_PATH=$PROJECTS_PATH/dotfiles
 
-mkcd () {
-  mkdir "$1"
-  cd "$1"
-}
+# Loads aliases
+source $DOTFILES_PATH/shell/aliases.sh
