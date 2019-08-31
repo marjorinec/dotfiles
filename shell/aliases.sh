@@ -2,10 +2,17 @@
 
 # mkcd()
 # creates a directory $1 and moves to it
-# USAGE: mkcd(dirname)
+# USAGE: mkcd dirname
 mkcd () {
   mkdir "$1"
   cd "$1"
+}
+
+# c()
+# moves to a directory $1 and lists its files
+# USAGE: c dirname
+c () {
+  cd "$1" && ls
 }
 
 # Sets VSCode as the default editor
