@@ -17,3 +17,18 @@ alias g="git"
 # uses colorizer
 alias show="cless"
 alias cat="ccat"
+
+# uses EXA instead of ls, if installed
+# otherwise uses better defaults for ls
+which exa >/dev/null 2>/dev/null
+if [ $? = 1 ]; then
+  alias ll='ls -alF'
+  alias la='ls -A'
+  alias l='ls'
+else 
+  alias ls="exa --git"
+  alias ll='exa -l --git'
+  alias la='exa -a --git'
+  alias lf='exa -bgHliS'
+  alias l='ll'
+fi
