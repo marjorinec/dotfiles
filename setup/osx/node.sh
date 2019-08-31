@@ -1,4 +1,5 @@
 #!/bin/bash
 
 brew install node
-brew install nodenv node-build
+brew install nvm
+mkdir ~/.nvm
