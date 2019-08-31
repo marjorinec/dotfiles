@@ -11,6 +11,9 @@ mkcd () {
 # Sets VSCode as the default editor
 export EDITOR="code --wait"
 
-# Aliases
+# ALIASES
 alias g="git"
+
+# uses colorizer
 alias show="cless"
+alias cat="ccat"
