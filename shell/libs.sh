@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# If Homebrew is installed
+command -v $1 >/dev/null 2>&1
+if [ $? ]; then
+  # sets a variable with brew installation path
+  export $BREW_PREFIX="$(brew --prefix)"
+  # fixes autocompletion for multiuser brew setups
+  alias zcompinit="zcompinit -u"
+fi
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
