@@ -4,7 +4,7 @@
 command -v "brew" >/dev/null 2>&1
 if [ $? ]; then
   # sets a variable with brew installation path
-  export $BREW_PREFIX="$(brew --prefix)"
+  export BREW_PREFIX="$(brew --prefix)"
   # fixes autocompletion for multiuser brew setups
   alias zcompinit="zcompinit -u"
 fi
