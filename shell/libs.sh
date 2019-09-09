@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # If Homebrew is installed
-command -v $1 >/dev/null 2>&1
+command -v "brew" >/dev/null 2>&1
 if [ $? ]; then
   # sets a variable with brew installation path
   export $BREW_PREFIX="$(brew --prefix)"
