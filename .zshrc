@@ -82,7 +82,10 @@ plugins=(
 export PROJECTS_PATH=$HOME/Projetos
 export DOTFILES_PATH=$PROJECTS_PATH/dotfiles
 
+# Loads this before starting up oh-my-zsh
+source $DOTFILES_PATH/shell/pre.sh
 
+# Starts oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
