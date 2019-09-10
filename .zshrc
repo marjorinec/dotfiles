@@ -78,6 +78,11 @@ plugins=(
 
 )
 
+# Exports paths to Projects folder & dotfiles folder
+export PROJECTS_PATH=$HOME/Projetos
+export DOTFILES_PATH=$PROJECTS_PATH/dotfiles
+
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -105,10 +110,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh
-
-# Exports paths to Projects folder & dotfiles folder
-export PROJECTS_PATH=$HOME/Projetos
-export DOTFILES_PATH=$PROJECTS_PATH/dotfiles
 
 # Loads aliases
 source $DOTFILES_PATH/shell/aliases.sh
